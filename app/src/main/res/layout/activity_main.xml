@@ -6,9 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="">
-
-
+    android:background="@color/mysky">
+    <EditText
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/edittext"
+        android:hint="Enter a number:"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/_10sdp"/>
+    <TextView
+        android:layout_marginTop="@dimen/_20sdp"
+        android:padding="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/edittext"
+        android:hint="Result"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+    <Button
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Prime"
+        android:background="@drawable/mybutton"
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="About me"
+        android:background="@drawable/mybutton"
+        android:textAllCaps="false"/>
 
 
 </LinearLayout>

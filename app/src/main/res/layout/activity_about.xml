@@ -6,11 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".About"
     android:orientation="vertical">
+
     <TextView
         android:layout_marginTop="@dimen/_82sdp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textAlignment="center"
-        android:text="Md. Mehedi Hasan\nDaffodil International Universiy, Bangladesh\n email: mehedi15-8421@diu.edu.bd Batch: 47"/>
+        android:text="Md. Mehedi Hasan\nDaffodil International Universiy, Bangladesh\n email: mehedi15-8421@diu.edu.bd\n Batch: 47"/>
 </LinearLayout>

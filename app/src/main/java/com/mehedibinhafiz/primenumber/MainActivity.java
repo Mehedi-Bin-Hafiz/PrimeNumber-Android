@@ -1,12 +1,12 @@
 package com.mehedibinhafiz.primenumber;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button ab,prime;
@@ -26,21 +26,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void prime(View view){
-        String value = edt.getText().toString();
-        int p = Integer.valueOf(value);
-        int i=0,count=0;
-        String result;
-        for ( i=2;i<p;i++){
-            if( p % 2 == 0){
-                count = count+1;
+        try {
+            String value = edt.getText().toString();
+            int p = Integer.valueOf(value);
+            int i=0,count=0;
+            String result;
+            for ( i=2;i<p;i++){
+                if( p % 2 == 0){
+                    count = count+1;
+                }
+            }
+            if (count>0){
+                tv.setText(value+" is not a prime number");
+
+            }
+            else {
+                tv.setText(value+" is a prime number");
             }
         }
-        if (count>0){
-            tv.setText(value+" is a prime number");
-
-        }
-        else {
-            tv.setText(value+" is not a prime number");
+        catch( Exception e){
+            Toast.makeText(getApplicationContext(),"Enater a valid number",Toast.LENGTH_LONG).show();
         }
 
     }

@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="About me"
-        android:onClick="ab"
+
         android:background="@drawable/mybutton"
         android:textAllCaps="false"/>
 
